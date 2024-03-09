@@ -28,13 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject",
+    "lint": "eslint . && prettier . --check",
+    "lint:fix": "eslint . --fix && prettier . --write"
   },
   "browserslist": {
     "production": [
@@ -49,12 +45,11 @@
     ]
   },
   "devDependencies": {
-    "prettier": "^2.7.1",
+    "@so1ve/eslint-config": "^2.0.0",
+    "@so1ve/prettier-config": "^2.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^2.8.8",
     "typescript": "4.4.2"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "jsxSingleQuote": true
   },
   "proxy": "http://localhost:3000"
 }
